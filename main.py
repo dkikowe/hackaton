@@ -18,7 +18,7 @@ def udastakBirthdayRecognition():
 def pravaBirthdayRecognition():
     for info in textRecognition(file_path_prava):
         if "3." in info:
-            info = info[3:13]
+            info = info[3:13]#тут [3:13] и 3. потому что считывает вот так: <<3.18.03.2005.г.Астана>>
             return info
 
 def udastakIinRecognition():
